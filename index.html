@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title> Formulario</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+    </style> 
+</head>
+<body>
+    <div class="form">
+        <form action="destino.php" onsubmit="return validar()">
+            <div>
+                <label for="nombre"> Nombre de Usuario</label>
+                <input type="text" name="nombre"  id="nombre" placeholder="Nombre  de usuario">
+            </div>
+            <div>
+                <label for="correo"> Correo  Electronico</label>
+                <input name="correo" id="email"  placeholder="Correo electronico">
+                <div id="msj-email"></div>
+            </div>
+            <div>
+                <label for="passwd"> Contraseña</label>
+                <input type="password" id="passwd" placeholder="******">
+                <label for="repasswd"> Reingrese la Contraseña</label>
+                <input type="password"  id="repasswd" placeholder="******">
+                <div id="msj-passwd"></div>
+            </div>
+            <hr>
+            <p>Datos Personales</p>
+            <div>
+                <label for="direccion">Direccion</label>
+                <input type="text" name="direccion" id="direccion" placeholder="Direccion">
+                <div id="msj-direccion"></div>
+            </div>
+            <div>
+                <label for="localidad"> Localidad</label>
+                <input type="text" name="localidad" id="loc" placeholder="Localidad">
+                <div id="msj-loc"></div>
+            </div>
+            <div>
+                <label for="codigo postal"> Codigo Postal</label>
+                <input type="text" name="codpostal" id="codpostal" placeholder="54321">
+                <div id="msj-codpostal"></div>
+            </div>
+            <div>
+                <label for="referencia"> Referencia</label>
+                <input type="text" name="ref" id="ref">
+            </div>
+            <div>
+                <label for="ciudad">Ciudad</label>
+                <input type="text" name="ciudad" id="ciudad">
+            </div>
+            <div>
+                <label for="fijo">Telefono Fijo</label>
+                <input type="number" name="fijo" id="fijo" placeholder="123456789">
+                <div id="msj-fijo"></div>
+            </div>
+            <div>
+                <label for="cel">Telefono  Celular</label>
+                <input type="number" name="cel" id="cel" placeholder="123456789">
+                <div id="msj_cel"></div>
+            </div>
+            <p>Comuna</p>
+            <div class="content-select">
+                <select id="select">
+                    <option value="c0" selected disabled>Seleccione su Comuna</option>
+                    <option value="c1">Valdivia</option>
+                    <option value="c2">Corral</option>
+                    <option value="c3">Lanco</option>
+                    <option value="c4">Los Lagos</option>
+                    <option value="c5">Máfil</option>
+                    <option value="c6">Mariquina</option>
+                    <option value="c7">Paillaco</option>
+                    <option value="c8">Panguipulli</option>
+                    <option value="c9">La Unión</option>
+                    <option value="c10">Futrono</option>
+                    <option value="c11">Lago Ranco</option>
+                    <option value="c12">Río Bueno</option>
+                </select>
+            </div>
+
+            <hr>
+            <p>Aficiones</p>
+            <div class="aficiones">
+                <label class="container">Jugar Videojuegos
+                    <input type="checkbox" id="cbox1">
+                    <span class="checkmark"></span>
+                  </label>
+                  
+                  <label class="container">Ver Peliculas
+                    <input type="checkbox" id="cbox2" >
+                    <span class="checkmark"></span>
+                  </label>
+                  
+                  <label class="container">Salir a Pasear
+                    <input type="checkbox" id="cbox3">
+                    <span class="checkmark"></span>
+                  </label>
+                  
+                  <label class="container">Ver Videos
+                    <input type="checkbox" id="cbox4">
+                    <span class="checkmark"></span>
+                  </label>
+                </label>
+                <div id="msj-check"></div>
+            </div>
+            <div>
+                <button type="submit" class="button" >Registrar</button>
+            </div>
+
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+
+
+
+
+
+</body>
+</html>

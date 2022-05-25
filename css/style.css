@@ -1,0 +1,173 @@
+
+
+
+/*  Formulario */
+body{
+    background-color: teal;
+}
+form{
+    width: 700px;
+    margin: auto;
+    background-color: #666f88;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+    font-family: 'Nunito', sans-serif;
+}
+h2{
+    text-align: center;
+    font-family: monospace;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+input, textarea{
+    font-family: monospace;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border-radius: 7px;
+    border: none;
+
+}
+   #button:hover{
+    cursor:pointer;
+   }
+   
+   @media (max-width:480px){
+   
+    form{
+     width:100%;
+    } 
+   
+}
+
+/* Fin Formulario */
+
+/* Checkbox */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* Fin Checkbox */
+
+/* select */	
+.content-select select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.content-select select::-ms-expand {
+    display: none;
+}
+	
+.content-select{
+	max-width: 700px;
+	position: relative;
+}
+ 
+.content-select select{
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
+  	padding: 7px 10px;
+  	height: 42px;
+  	outline: 0; 
+  	border: 0;
+	border-radius: 0;
+	background: #f0f0f0;
+	color: #7b7b7b;
+	font-size: 1em;
+	color: rgb(0, 0, 0);
+    font-family: 'Nunito', sans-serif;
+	border:2px solid rgba(0,0,0,0.2);
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.25s ease;
+}
+ 
+.content-select select:hover{
+	background: white;
+}
+/* Fin Select*/
+
+button {
+    text-align: center;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  button:focus {
+    outline: 0;
+  }
+  button {
+    padding: 10px 20px;
+    outline: 1px dotted black;
+  }
+  .button {
+    background-color: teal;
+    border-radius: 10px;
+  }
